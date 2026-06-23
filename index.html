@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COVID-19 Health Status Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🦠 COVID-19 Health Status Tracker</h1>
+
+    <div class="search-box">
+        <input type="text" id="countryInput" placeholder="Enter Country Name">
+        <button onclick="getCovidData()">Search</button>
+    </div>
+
+    <div class="card">
+        <h2 id="country">Country Name</h2>
+
+        <div class="stats">
+            <div class="box">
+                <h3>Total Cases</h3>
+                <p id="cases">0</p>
+            </div>
+
+            <div class="box">
+                <h3>Recovered</h3>
+                <p id="recovered">0</p>
+            </div>
+
+            <div class="box">
+                <h3>Deaths</h3>
+                <p id="deaths">0</p>
+            </div>
+
+            <div class="box">
+                <h3>Active Cases</h3>
+                <p id="active">0</p>
+            </div>
+        </div>
+
+        <div id="alertBox"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

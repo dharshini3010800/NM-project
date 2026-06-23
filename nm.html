@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Mini E-Commerce Store</h1>
+
+    <div class="products">
+
+        <div class="product">
+            <h3>T-Shirt</h3>
+            <img src="t shirt.jpeg"alt="T-Shirt"style="width:300px;height:200px;">
+            <p>₹500</p>
+            <button onclick="addToCart('T-Shirt',500)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h3>Shoes</h3>
+            <img src="shoes.jpeg"alt="Shoes"style="width:300px;height:200px;">
+            <p>₹1000</p>
+            <button onclick="addToCart('Shoes',1000)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <h3>Watch</h3>
+            <img src="watchh.jpeg"alt="Watch"style="width:300px;height:200px;">
+            <p>₹1500</p>
+            <button onclick="addToCart('Watch',1500)">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items"></ul>
+
+    <h3>Total Amount: ₹<span id="total">0</span></h3>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
